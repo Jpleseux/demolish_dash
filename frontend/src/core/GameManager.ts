@@ -8,7 +8,7 @@ export interface GameResult {
 }
 // 'tag_bomb', 'platform_push', 'boulder_run'
 export class GameManager {
-  static readonly AVAILABLE_GAMES = ['falling_tiles'];
+  static readonly AVAILABLE_GAMES = ['falling_tiles', 'tag_bomb', 'platform_push', 'boulder_run'];
 
   static calculatePoints(rank: number, totalPlayers: number): number {
     return totalPlayers - rank + 1;
